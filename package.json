@@ -1,0 +1,19 @@
+{
+  "name": "quote-or-a-joke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HUJDUR/quote-or-a-joke.git"
+  },
+  "author": "Nadir Hujdur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HUJDUR/quote-or-a-joke/issues"
+  },
+  "homepage": "https://github.com/HUJDUR/quote-or-a-joke#readme"
+}
