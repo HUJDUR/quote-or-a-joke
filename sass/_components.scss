@@ -1,0 +1,7 @@
+.btn {
+    &__joke, &__quote {
+        text-decoration: none;
+        color: var(--color-grey-2);
+        font-weight: 200;
+    }
+}
