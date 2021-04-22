@@ -2,6 +2,9 @@
   --color-primary-light: #64e8de;
   --color-primary-dark: #8a64eb;
   --color-white: #fff;
+  --color-grey-1: #333;
+  --color-grey-2: #777;
+  --color-grey-3: #999;
   --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
   --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3); }
 
@@ -27,9 +30,33 @@ body {
   font-family: 'Raleway', sans-serif;
   min-height: 100vh; }
 
+.btn__joke, .btn__quote {
+  text-decoration: none;
+  color: var(--color-grey-2);
+  font-weight: 200; }
+
 .container {
+  display: flex;
+  flex-direction: column;
   height: 50rem;
   width: 100rem;
   background-color: var(--color-white);
   box-shadow: var(--shadow-dark);
   border-radius: 1rem; }
+  .container__paragraph {
+    text-align: center;
+    font-size: 6.5rem;
+    font-style: italic;
+    color: var(--color-grey-1);
+    border-bottom: 1px solid var(--color-grey-3); }
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1; }
+  .button-container__joke, .button-container__quote {
+    display: inline-block;
+    text-align: center;
+    font-size: 5rem;
+    width: 25rem; }
