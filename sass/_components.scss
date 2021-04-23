@@ -1,7 +1,20 @@
 .btn {
     &__joke, &__quote {
+        display: flex;
+        height: 50%;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
         text-decoration: none;
         color: var(--color-grey-2);
         font-weight: 200;
+
+        font-size: 5rem;
     }
+
+    &__joke {
+        border-right: var(--border-1);
+    }
+
 }
