@@ -1,9 +1,8 @@
-class JokeButtonView {
-    #parentElement = document.querySelector('.btn__joke');
+import View from './View.js';
 
-    addHandler(handler) {
-        this.#parentElement.addEventListener('click', handler);
-    }
+class JokeButtonView extends View {
+    _parentElement = document.querySelector('.button-container');
+    _element = document.querySelector('.btn__joke');
 }
 
 export default new JokeButtonView();
