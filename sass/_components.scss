@@ -7,14 +7,27 @@
         justify-content: center;
         text-align: center;
         text-decoration: none;
-        color: var(--color-grey-2);
+        color: $color-grey-2;
         font-weight: 200;
 
         font-size: 5rem;
     }
 
     &__joke {
-        border-right: var(--border-1);
+        border-right: $border-1;
     }
 
 }
+
+.spinner {
+    margin: 5rem auto;
+    text-align: center;
+  
+    svg {
+      height: 6rem;
+      width: 6rem;
+      fill: $color-primary-light;
+      animation: rotate 2s infinite linear;
+    }
+}
+
