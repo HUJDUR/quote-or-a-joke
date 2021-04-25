@@ -4,8 +4,8 @@
     flex-direction: column;
     height: 50rem;
     width: 100rem;
-    background-color: var(--color-white);
-    box-shadow: var(--shadow-dark);
+    background-color: $color-white;
+    box-shadow: $shadow-dark;
     border-radius: 1rem;
     animation: fadeIn .5s ease-in .5s;
     animation-fill-mode: forwards;
@@ -15,9 +15,9 @@
         text-align: center;
         font-size: 6.5rem;
         font-style: italic;
-        color: var(--color-grey-1);
+        color: $color-grey-1;
         width: 90%;
-        border-bottom: var(--border-1);
+        border-bottom: $border-1;
     }
 }
 
@@ -28,12 +28,3 @@
     flex-grow: 1;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}

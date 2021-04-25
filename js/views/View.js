@@ -1,5 +1,3 @@
-// import icons from '../../img/icons.svg';
-
 export default class View {
     addHandler(handler) {
         this._element.addEventListener('click', handler);
@@ -12,8 +10,10 @@ export default class View {
     renderSpinner() {
         const markup = 
         `<div class="spinner">
-        
-        </div>`
+            <svg>
+                <use href="./img/icons.svg#icon-loader"></use>
+            </svg>
+        </div> `
 
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
