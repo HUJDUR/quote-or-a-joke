@@ -30,7 +30,14 @@ export default class View {
             <p class="result__secondary">${this._data[1]}</p>
         </div>
         `
+        const navigationMarkup = `
+        <div class="result-navigation">
+            <a href="#" class="btn__reload">Another One!</a>
+            <a href="#" class="btn__back">Back!</a>
+        </div>
+        `
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
+        this._parentElement.insertAdjacentHTML('afterend', navigationMarkup);
     }
 }

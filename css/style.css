@@ -35,6 +35,15 @@ body {
 .btn__joke {
   border-right: 1px solid #999; }
 
+.btn__reload, .btn__back {
+  text-decoration: none;
+  font-weight: 400;
+  color: #8a64eb;
+  font-size: 2rem;
+  background-color: #f4f2f2;
+  padding: .5rem;
+  border-radius: 5px; }
+
 .spinner {
   margin: 5rem auto;
   text-align: center; }
@@ -85,6 +94,11 @@ body {
     font-size: 4rem; }
   .result__secondary {
     font-size: 4.5rem; }
+
+.result-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem 1.5rem 2rem; }
 
 @keyframes fadeIn {
   from {

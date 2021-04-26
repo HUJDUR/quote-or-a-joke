@@ -1,22 +1,22 @@
 import * as model from './model.js';
-import jokeButtonView from './views/jokeView.js';
-import quoteButtonView from './views/quoteView.js'
+import jokeView from './views/jokeView.js';
+import quoteView from './views/quoteView.js';
 
 async function controlJoke() {
-    jokeButtonView.renderSpinner();
+    jokeView.renderSpinner();
     await model.getJoke();
-    jokeButtonView.renderContent(model.state.data);
+    jokeView.renderContent(model.state.data);
 }
 
 async function controlQuote() {
-    quoteButtonView.renderSpinner();
+    quoteView.renderSpinner();
     await model.getQuote();
-    quoteButtonView.renderContent(model.state.data);
+    quoteView.renderContent(model.state.data);
 }
 
 function init() {
-    jokeButtonView.addHandler(controlJoke);
-    quoteButtonView.addHandler(controlQuote);
+    jokeView.addHandler(controlJoke);
+    quoteView.addHandler(controlQuote);
 }
 
 init();
