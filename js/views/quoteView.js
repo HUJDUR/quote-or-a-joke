@@ -1,8 +1,8 @@
 import View from './View.js';
 
-class QuoteButtonView extends View{
+class QuoteView extends View {
     _parentElement = document.querySelector('.button-container');
     _element = document.querySelector('.btn__quote');
 }
 
-export default new QuoteButtonView();
+export default new QuoteView();

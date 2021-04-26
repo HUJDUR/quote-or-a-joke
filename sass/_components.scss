@@ -17,6 +17,17 @@
         border-right: $border-1;
     }
 
+    &__reload, &__back {
+        text-decoration: none;
+        font-weight: 400;
+        color: $color-primary-dark;
+        font-size: 2rem;
+        background-color: $color-grey-4;
+        padding: .5rem;
+        border-radius: 5px;
+    }
+
+
 }
 
 .spinner {
