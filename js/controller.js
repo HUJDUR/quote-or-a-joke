@@ -5,13 +5,13 @@ import quoteButtonView from './views/quoteView.js'
 async function controlJoke() {
     jokeButtonView.renderSpinner();
     await model.getJoke();
-    console.log(model.state.data);
+    jokeButtonView.renderContent(model.state.data);
 }
 
 async function controlQuote() {
     quoteButtonView.renderSpinner();
     await model.getQuote();
-    console.log(model.state.data);
+    quoteButtonView.renderContent(model.state.data);
 }
 
 function init() {
@@ -20,4 +20,3 @@ function init() {
 }
 
 init();
-
