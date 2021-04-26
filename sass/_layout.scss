@@ -28,3 +28,25 @@
     flex-grow: 1;
 }
 
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-grow: 1;
+    height: 100%;
+
+    &__primary, &__secondary {
+        color: $color-grey-1;
+        font-weight: 200;
+    }
+
+    &__primary {
+        font-size: 4rem;
+    }
+
+    &__secondary {
+        font-size: 4.5rem;
+    }
+}
