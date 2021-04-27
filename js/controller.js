@@ -1,6 +1,8 @@
 import * as model from './model.js';
 import jokeView from './views/jokeView.js';
 import quoteView from './views/quoteView.js';
+import reloadView from './views/reloadView.js';
+import backView from './views/backView.js';
 
 async function controlJoke() {
     jokeView.renderSpinner();
@@ -14,9 +16,20 @@ async function controlQuote() {
     quoteView.renderContent(model.state.data);
 }
 
+function controlReload() {
+    if (model.state.status === 'joke') controlJoke();
+    if (model.state.status === 'quote') controlQuote();
+}
+
+function controlBack() {
+    backView.renderContent();
+}
+
 function init() {
     jokeView.addHandler(controlJoke);
     quoteView.addHandler(controlQuote);
+    reloadView.addHandler(controlReload);
+    backView.addHandler(controlBack);
 }
 
 init();

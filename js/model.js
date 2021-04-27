@@ -1,7 +1,8 @@
 import {JOKE_URL, QUOTE_URL} from './config.js';
 
 export const state = {
-    data: []
+    data: [],
+    status: ''
 }
 
 export async function getJSON(url) {
@@ -34,9 +35,11 @@ export async function getQuote() {
 function createJokeDataObject(data) {
     const {setup: jokeSetup, punchline: jokePunchline} = data;
     state.data = [jokeSetup, jokePunchline];
+    state.status = 'joke';
 }
 
 function createQuoteDataObject(data) {
     const {content: quote, author: quoteAuthor} = data;
     state.data = [quote, quoteAuthor];   
+    state.status = 'quote';
 }

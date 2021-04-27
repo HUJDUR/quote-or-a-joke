@@ -91,12 +91,12 @@ body {
     color: #333;
     font-weight: 200; }
   .result__primary {
-    font-size: 4rem; }
+    font-size: 3.5rem; }
   .result__secondary {
-    font-size: 4.5rem; }
+    font-size: 4rem; }
 
 .result-navigation {
-  display: flex;
+  display: none;
   justify-content: space-between;
   margin: 0 2rem 1.5rem 2rem; }
 
