@@ -2,7 +2,14 @@ import View from './View.js';
 
 class QuoteView extends View {
     _parentElement = document.querySelector('.primary-container');
-    _element = document.querySelector('.btn__quote');
+
+    addHandler(handler) {
+        this._parentElement.addEventListener('click', function(e) {
+            const btn = e.target.closest('.btn__quote');
+            if (!btn) return;
+            handler();
+        })
+    }
 
     _generateMarkup(data) {
         return `

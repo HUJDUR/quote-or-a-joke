@@ -4,10 +4,6 @@ export default class View {
     _navigationContainer = document.querySelector('.result-navigation');
     _navigationOppositeButton =  document.querySelector('.btn__opposite');
 
-    addHandler(handler) {
-        this._element.addEventListener('click', handler);
-    }
-
     _clear() {
         this._parentElement.innerHTML = '';
     }
@@ -33,6 +29,6 @@ export default class View {
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
         this._navigationContainer.style.display = 'flex';
-        this._navigationOppositeButton.innerHTML = `Or a ${status} instead?`
+        this._navigationOppositeButton.innerHTML = `Or a ${status} instead?`;
     }
 }
