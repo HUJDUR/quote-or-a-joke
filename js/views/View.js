@@ -1,5 +1,6 @@
 export default class View {
     _data;
+    _status;
 
     addHandler(handler) {
         this._element.addEventListener('click', handler);
@@ -15,23 +16,21 @@ export default class View {
             <svg>
                 <use href="./img/icons.svg#icon-loader"></use>
             </svg>
-        </div> `
+        </div> `;
 
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
     }
 
-    renderContent(data) {
+    renderContent(data, status) {
         this._data = data;
+        this._status = status;
+        
+        const markup = this._generateMarkup(this._data);
 
-        const markup = `
-        <div class="result">
-            <p class="result__primary">${this._data[0]}</p>
-            <p class="result__secondary">${this._data[1]}</p>
-        </div>
-        `
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
         document.querySelector('.result-navigation').style.display = 'flex';
+        document.querySelector('.btn__back').innerHTML = `Or a ${status === 'joke' ? 'quote' : 'joke'} instead?`
     }
 }

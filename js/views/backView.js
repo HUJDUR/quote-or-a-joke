@@ -15,6 +15,15 @@ class BackView extends View {
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
         document.querySelector('.result-navigation').style.display = 'none';
     }
+
+    _generateMarkup(data) {
+        return `
+            <div class="button-container">
+                <a href="#" class="btn__joke">Joke?</a>
+                <a href="#" class="btn__quote">Quote?</a>  
+            </div>
+        `
+    }
 }
 
 export default new BackView();

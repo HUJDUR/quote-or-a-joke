@@ -7,13 +7,13 @@ import backView from './views/backView.js';
 async function controlJoke() {
     jokeView.renderSpinner();
     await model.getJoke();
-    jokeView.renderContent(model.state.data);
+    jokeView.renderContent(model.state.data, model.state.status);
 }
 
 async function controlQuote() {
     quoteView.renderSpinner();
     await model.getQuote();
-    quoteView.renderContent(model.state.data);
+    quoteView.renderContent(model.state.data, model.state.status);
 }
 
 function controlReload() {
@@ -22,7 +22,8 @@ function controlReload() {
 }
 
 function controlBack() {
-    backView.renderContent();
+    if (model.state.status === 'joke') controlQuote();
+    if (model.state.status === 'quote') controlJoke();
 }
 
 function init() {
