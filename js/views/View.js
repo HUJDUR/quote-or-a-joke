@@ -1,6 +1,8 @@
 export default class View {
     _data;
     _status;
+    _navigationContainer = document.querySelector('.result-navigation');
+    _navigationOppositeButton =  document.querySelector('.btn__opposite');
 
     addHandler(handler) {
         this._element.addEventListener('click', handler);
@@ -30,7 +32,7 @@ export default class View {
 
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
-        document.querySelector('.result-navigation').style.display = 'flex';
-        document.querySelector('.btn__back').innerHTML = `Or a ${status === 'joke' ? 'quote' : 'joke'} instead?`
+        this._navigationContainer.style.display = 'flex';
+        this._navigationOppositeButton.innerHTML = `Or a ${status} instead?`
     }
 }

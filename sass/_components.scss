@@ -17,7 +17,7 @@
         border-right: $border-1;
     }
 
-    &__reload, &__back {
+    &__reload, &__opposite{
         text-decoration: none;
         font-weight: 400;
         color: $color-primary-dark;
@@ -26,8 +26,6 @@
         padding: .5rem;
         border-radius: 5px;
     }
-
-
 }
 
 .spinner {
