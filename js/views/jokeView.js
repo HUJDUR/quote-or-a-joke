@@ -2,7 +2,14 @@ import View from './View.js';
 
 class JokeButtonView extends View { 
     _parentElement = document.querySelector('.primary-container');
-    _element = document.querySelector('.btn__joke');
+
+    addHandler(handler) {
+        this._parentElement.addEventListener('click', function(e) {
+            const btn = e.target.closest('.btn__joke');
+            if (!btn) return;
+            handler();
+        })
+    }
 
     _generateMarkup(data) {
         return `
