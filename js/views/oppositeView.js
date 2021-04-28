@@ -1,7 +1,7 @@
 import View from './View.js';
 
 class OppositeView extends View {
-    _parentElement = document.querySelector('.button-container');
+    _parentElement = document.querySelector('.orimary-container');
     _element = document.querySelector('.btn__opposite');
 
     renderContent() {

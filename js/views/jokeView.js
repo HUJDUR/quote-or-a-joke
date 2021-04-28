@@ -1,7 +1,7 @@
 import View from './View.js';
 
 class JokeButtonView extends View { 
-    _parentElement = document.querySelector('.button-container');
+    _parentElement = document.querySelector('.primary-container');
     _element = document.querySelector('.btn__joke');
 
     _generateMarkup(data) {
