@@ -17,32 +17,33 @@ body {
   align-items: center;
   line-height: 1.6;
   background-image: linear-gradient(to right bottom, #64e8de, #8a64eb);
-  font-family: 'Raleway', sans-serif;
   min-height: 100vh; }
 
-.btn__joke, .btn__quote {
-  display: flex;
-  height: 50%;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  color: #777;
-  font-weight: 200;
-  font-size: 5rem; }
+body, button {
+  font-family: 'Raleway', sans-serif; }
 
-.btn__joke {
-  border-right: 1px solid #999; }
-
-.btn__reload, .btn__opposite {
-  text-decoration: none;
-  font-weight: 400;
-  color: #8a64eb;
-  font-size: 2rem;
-  background-color: #f4f2f2;
-  padding: .5rem;
-  border-radius: 5px; }
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer; }
+  .btn__joke, .btn__quote {
+    height: 50%;
+    width: 50%;
+    flex-grow: 1;
+    text-align: center;
+    color: #777;
+    font-weight: 200;
+    font-size: 5rem; }
+  .btn__joke {
+    border-right: 1px solid #999; }
+  .btn__reload, .btn__opposite {
+    text-decoration: none;
+    font-weight: 400;
+    color: #8a64eb;
+    font-size: 2rem;
+    background-color: #f4f2f2;
+    padding: .5rem;
+    border-radius: 5px; }
 
 .spinner {
   margin: 5rem auto;
@@ -82,11 +83,12 @@ body {
     width: 90%;
     border-bottom: 1px solid #999; }
 
-.button-container {
+.primary-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-grow: 1; }
+  flex-grow: 1;
+  padding: 0 2.5rem; }
 
 .result {
   display: flex;

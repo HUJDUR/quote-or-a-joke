@@ -1,15 +1,16 @@
 .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+
     &__joke, &__quote {
-        display: flex;
         height: 50%;
+        width: 50%;
         flex-grow: 1;
-        flex-direction: column;
-        justify-content: center;
+        
         text-align: center;
-        text-decoration: none;
         color: $color-grey-2;
         font-weight: 200;
-
         font-size: 5rem;
     }
 
