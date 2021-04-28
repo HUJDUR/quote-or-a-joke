@@ -1,8 +1,8 @@
 import View from './View.js';
 
-class BackView extends View {
+class OppositeView extends View {
     _parentElement = document.querySelector('.button-container');
-    _element = document.querySelector('.btn__back');
+    _element = document.querySelector('.btn__opposite');
 
     renderContent() {
         const markup = `
@@ -26,4 +26,4 @@ class BackView extends View {
     }
 }
 
-export default new BackView();
+export default new OppositeView();
