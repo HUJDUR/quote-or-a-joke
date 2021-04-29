@@ -15,10 +15,14 @@
         height: 45rem;
     }
 
-    @include respond(phone) {
+    @include respond(medium) {
         height: 52rem;
         width: 100%;
         border-radius: 3rem;
+    }
+
+    @include respond(phone) {
+        height: 58rem;
     }
 
     &__paragraph {
@@ -29,6 +33,11 @@
         color: $color-grey-1;
         width: 90%;
         border-bottom: $border-1;
+
+        @include respond(phone) {
+            font-size: 5.5rem;
+            width: 98%;
+        }
     }
 }
 
@@ -39,6 +48,11 @@
     flex-grow: 1;
 
     padding: 0 2.5rem;
+
+    @include respond(phone) {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
 
 .result {

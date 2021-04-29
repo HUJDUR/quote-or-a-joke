@@ -12,10 +12,19 @@
         color: $color-grey-2;
         font-weight: 200;
         font-size: 5rem;
+
+        @include respond(phone) {
+            width: 80%;
+        }
     }
 
     &__joke {
         border-right: $border-1;
+
+        @include respond(phone) {
+            border-right: none;
+            border-bottom: $border-1;
+        }
     }
 
     &__reload, &__opposite{
