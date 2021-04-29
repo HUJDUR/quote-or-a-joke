@@ -9,15 +9,25 @@ function _otherStateStatus() {
 }
 
 async function controlJoke() {
-    jokeView.renderSpinner();
-    await model.getJoke();
-    jokeView.renderContent(model.state.data, _otherStateStatus());
+    try {
+        jokeView.renderSpinner();
+        await model.getJoke();
+        jokeView.renderContent(model.state.data, _otherStateStatus());
+    } catch (err) {
+        jokeView.renderError(err);
+        console.log(err.message);
+    }
 }
 
 async function controlQuote() {
-    quoteView.renderSpinner();
-    await model.getQuote();
-    quoteView.renderContent(model.state.data, _otherStateStatus());
+    try {
+        quoteView.renderSpinner();
+        await model.getQuote();
+        quoteView.renderContent(model.state.data, _otherStateStatus());
+    } catch (err) {
+        quoteView.renderError(err);
+        console.log(err.message);
+    }
 }
 
 function controlReload() {

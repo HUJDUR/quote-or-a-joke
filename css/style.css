@@ -61,6 +61,20 @@ body, button {
     fill: #64e8de;
     animation: rotate 2s infinite linear; }
 
+.error {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 10rem;
+  align-items: center; }
+  .error__message {
+    font-size: 3rem;
+    margin-top: 1rem; }
+  .error svg {
+    height: 10rem;
+    width: 10rem;
+    fill: #64e8de; }
+
 .container {
   opacity: 0;
   display: flex;

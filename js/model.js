@@ -33,12 +33,16 @@ export async function getQuote() {
 }
 
 function createJokeDataObject(data) {
+    if (!data) throw new Error('Error with the API data!');
+
     const {setup: jokeSetup, punchline: jokePunchline} = data;
     state.data = [jokeSetup, jokePunchline];
     state.status = 'joke';
 }
 
 function createQuoteDataObject(data) {
+    if (!data) throw new Error('Error with the API data!');
+
     const {content: quote, author: quoteAuthor} = data;
     state.data = [quote, quoteAuthor];   
     state.status = 'quote';
