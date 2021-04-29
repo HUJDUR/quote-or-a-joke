@@ -1,3 +1,5 @@
+import icons from './../../img/icons.svg';
+
 export default class View {
     _data;
     _status;
@@ -15,6 +17,20 @@ export default class View {
                 <use href="./img/icons.svg#icon-loader"></use>
             </svg>
         </div> `;
+
+        this._clear();
+        this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    }
+
+    renderError(err) {
+        const markup = 
+        `<div class="error">
+            <svg>
+                <use href="./img/icons.svg#icon-alert-triangle"></use>
+            </svg>
+            <p class="error__message">Something went wrong!</p>
+            <p class="error__message">${err.message}</p>
+        </div>`
 
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin', markup);

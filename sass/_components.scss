@@ -50,3 +50,22 @@
     }
 }
 
+.error {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 10rem;
+    align-items: center;
+
+    &__message {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+
+    svg {
+        height: 10rem;
+        width: 10rem;
+        fill: $color-primary-light;
+    }
+}
+
