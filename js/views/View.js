@@ -28,7 +28,7 @@ export default class View {
             </svg>
             <p class="error__message">Something went wrong!</p>
             <p class="error__message">${err.message}</p>
-        </div>`
+        </div>`;
 
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
@@ -42,7 +42,7 @@ export default class View {
 
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
-        this._navigationContainer.style.display = 'flex';
-        this._navigationOppositeButton.innerHTML = `Or a ${this.status} instead?`;
+        this._navigationContainer.classList.remove('hidden');
+        this._navigationOppositeButton.textContent = `Or a ${this._status} instead?`;
     }
 }

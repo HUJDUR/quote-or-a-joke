@@ -8,7 +8,7 @@ class OppositeView extends View {
             const btn = e.target.closest('.btn__opposite');
             if (!btn) return;
             handler();
-        })
+        });
     }
 }
 
