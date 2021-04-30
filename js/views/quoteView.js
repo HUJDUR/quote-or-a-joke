@@ -8,7 +8,7 @@ class QuoteView extends View {
             const btn = e.target.closest('.btn__quote');
             if (!btn) return;
             handler();
-        })
+        });
     }
 
     _generateMarkup(data) {

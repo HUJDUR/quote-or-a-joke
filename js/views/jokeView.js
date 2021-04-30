@@ -8,7 +8,7 @@ class JokeButtonView extends View {
             const btn = e.target.closest('.btn__joke');
             if (!btn) return;
             handler();
-        })
+        });
     }
 
     _generateMarkup(data) {

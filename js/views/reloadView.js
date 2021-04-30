@@ -9,7 +9,7 @@ class ReloadView extends View {
             if (!btn) return;
             handler();
         });
-    };
+    }
 }
 
 export default new ReloadView();
