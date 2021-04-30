@@ -43,6 +43,6 @@ export default class View {
         this._clear();
         this._parentElement.insertAdjacentHTML('afterbegin', markup);
         this._navigationContainer.style.display = 'flex';
-        this._navigationOppositeButton.innerHTML = `Or a ${status} instead?`;
+        this._navigationOppositeButton.innerHTML = `Or a ${this.status} instead?`;
     }
 }
