@@ -1,94 +1,94 @@
 .container {
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    height: 50rem;
-    width: 100rem;
-    background-color: $color-white;
-    box-shadow: $shadow-dark;
-    border-radius: 1rem;
-    animation: fadeIn 0.5s ease-in 0.5s;
-    animation-fill-mode: forwards;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	height: 50rem;
+	width: 100rem;
+	background-color: $color-white;
+	box-shadow: $shadow-dark;
+	border-radius: 1rem;
+	animation: fadeIn 0.5s ease-in 0.5s;
+	animation-fill-mode: forwards;
 
-    @include respond(tab-port) {
-        width: 80rem;
-        height: 45rem;
-    }
+	@include respond(tab-port) {
+		width: 80rem;
+		height: 45rem;
+	}
 
-    @include respond(medium) {
-        height: 52rem;
-        width: 100%;
-        border-radius: 3rem;
-    }
+	@include respond(medium) {
+		height: 52rem;
+		width: 100%;
+		border-radius: 3rem;
+	}
 
-    @include respond(phone) {
-        height: 58rem;
-    }
+	@include respond(phone) {
+		height: 58rem;
+	}
 
-    &__paragraph {
-        align-self: center;
-        text-align: center;
-        font-size: 6.5rem;
-        font-style: italic;
-        color: $color-grey-1;
-        width: 90%;
-        border-bottom: $border-1;
+	&__paragraph {
+		align-self: center;
+		text-align: center;
+		font-size: 6.5rem;
+		font-style: italic;
+		color: $color-grey-1;
+		width: 90%;
+		border-bottom: $border-1;
 
-        @include respond(phone) {
-            font-size: 5.5rem;
-            width: 98%;
-        }
-    }
+		@include respond(phone) {
+			font-size: 5.5rem;
+			width: 98%;
+		}
+	}
 }
 
 .primary-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-grow: 1;
 
-    padding: 0 2.5rem;
+	padding: 0 2.5rem;
 
-    @include respond(phone) {
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+	@include respond(phone) {
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
 }
 
 .result {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    flex-grow: 1;
-    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	flex-grow: 1;
+	height: 100%;
 
-    &__primary,
-    &__secondary {
-        color: $color-grey-1;
-        font-weight: 200;
-    }
+	&__primary,
+	&__secondary {
+		color: $color-grey-1;
+		font-weight: 200;
+	}
 
-    &__primary {
-        font-size: 3.5rem;
-    }
+	&__primary {
+		font-size: 3.5rem;
+	}
 
-    &__secondary {
-        font-size: 4rem;
+	&__secondary {
+		font-size: 4rem;
 
-        @include respond(tab-port) {
-            font-size: 3.5rem;
-        }
-    }
+		@include respond(tab-port) {
+			font-size: 3.5rem;
+		}
+	}
 }
 
 .result-navigation {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 2rem 1.5rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 2rem 1.5rem 2rem;
 }
 
 .hidden {
-    display: none;
+	display: none;
 }
