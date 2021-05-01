@@ -1,26 +1,26 @@
 export default class View {
-    _data;
-    _status;
-    _navigationContainer = document.querySelector('.result-navigation');
-    _navigationOppositeButton = document.querySelector('.btn__opposite');
+	_data;
+	_status;
+	_navigationContainer = document.querySelector('.result-navigation');
+	_navigationOppositeButton = document.querySelector('.btn__opposite');
 
-    _clear() {
-        this._parentElement.innerHTML = '';
-    }
+	_clear() {
+		this._parentElement.innerHTML = '';
+	}
 
-    renderSpinner() {
-        const markup = `<div class="spinner">
+	renderSpinner() {
+		const markup = `<div class="spinner">
             <svg>
                 <use href="./img/icons.svg#icon-loader"></use>
             </svg>
         </div> `;
 
-        this._clear();
-        this._parentElement.insertAdjacentHTML('afterbegin', markup);
-    }
+		this._clear();
+		this._parentElement.insertAdjacentHTML('afterbegin', markup);
+	}
 
-    renderError(err) {
-        const markup = `<div class="error">
+	renderError(err) {
+		const markup = `<div class="error">
             <svg>
                 <use href="./img/icons.svg#icon-alert-triangle"></use>
             </svg>
@@ -28,19 +28,19 @@ export default class View {
             <p class="error__message">${err.message}</p>
         </div>`;
 
-        this._clear();
-        this._parentElement.insertAdjacentHTML('afterbegin', markup);
-    }
+		this._clear();
+		this._parentElement.insertAdjacentHTML('afterbegin', markup);
+	}
 
-    renderContent(data, status) {
-        this._data = data;
-        this._status = status;
+	renderContent(data, status) {
+		this._data = data;
+		this._status = status;
 
-        const markup = this._generateMarkup(this._data);
+		const markup = this._generateMarkup(this._data);
 
-        this._clear();
-        this._parentElement.insertAdjacentHTML('afterbegin', markup);
-        this._navigationContainer.classList.remove('hidden');
-        this._navigationOppositeButton.textContent = `Or a ${this._status} instead?`;
-    }
+		this._clear();
+		this._parentElement.insertAdjacentHTML('afterbegin', markup);
+		this._navigationContainer.classList.remove('hidden');
+		this._navigationOppositeButton.textContent = `Or a ${this._status} instead?`;
+	}
 }
