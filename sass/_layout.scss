@@ -7,7 +7,7 @@
     background-color: $color-white;
     box-shadow: $shadow-dark;
     border-radius: 1rem;
-    animation: fadeIn .5s ease-in .5s;
+    animation: fadeIn 0.5s ease-in 0.5s;
     animation-fill-mode: forwards;
 
     @include respond(tab-port) {
@@ -64,7 +64,8 @@
     flex-grow: 1;
     height: 100%;
 
-    &__primary, &__secondary {
+    &__primary,
+    &__secondary {
         color: $color-grey-1;
         font-weight: 200;
     }

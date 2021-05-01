@@ -1,10 +1,10 @@
 import View from './View.js';
 
-class JokeButtonView extends View { 
+class JokeButtonView extends View {
     _parentElement = document.querySelector('.primary-container');
 
     addHandler(handler) {
-        this._parentElement.addEventListener('click', function(e) {
+        this._parentElement.addEventListener('click', function (e) {
             const btn = e.target.closest('.btn__joke');
             if (!btn) return;
             handler();

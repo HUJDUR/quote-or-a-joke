@@ -3,11 +3,12 @@
     border: none;
     cursor: pointer;
 
-    &__joke, &__quote {
+    &__joke,
+    &__quote {
         height: 50%;
         width: 50%;
         flex-grow: 1;
-        
+
         text-align: center;
         color: $color-grey-2;
         font-weight: 200;
@@ -27,13 +28,14 @@
         }
     }
 
-    &__reload, &__opposite{
+    &__reload,
+    &__opposite {
         text-decoration: none;
         font-weight: 400;
         color: $color-primary-dark;
         font-size: 2rem;
         background-color: $color-grey-4;
-        padding: .5rem;
+        padding: 0.5rem;
         border-radius: 5px;
     }
 }
@@ -41,12 +43,12 @@
 .spinner {
     margin: 5rem auto;
     text-align: center;
-  
+
     svg {
-      height: 6rem;
-      width: 6rem;
-      fill: $color-primary-light;
-      animation: rotate 2s infinite linear;
+        height: 6rem;
+        width: 6rem;
+        fill: $color-primary-light;
+        animation: rotate 2s infinite linear;
     }
 }
 
@@ -68,4 +70,3 @@
         fill: $color-primary-light;
     }
 }
-

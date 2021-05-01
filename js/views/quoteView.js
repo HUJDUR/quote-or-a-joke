@@ -4,7 +4,7 @@ class QuoteView extends View {
     _parentElement = document.querySelector('.primary-container');
 
     addHandler(handler) {
-        this._parentElement.addEventListener('click', function(e) {
+        this._parentElement.addEventListener('click', function (e) {
             const btn = e.target.closest('.btn__quote');
             if (!btn) return;
             handler();
