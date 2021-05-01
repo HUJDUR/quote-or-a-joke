@@ -1,3 +1,5 @@
-A place where you can get a quick joke or a programming quote before you start your day!
+# Quote or a Joke:grey_question:
 
-Link: https://hujdur.github.io/quote-or-a-joke
+Web application that lets you start your day with a quick joke or a random quote.
+
+Link for the application: https://hujdur.github.io/quote-or-a-joke
