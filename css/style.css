@@ -19,7 +19,8 @@ body {
   background-image: linear-gradient(to right bottom, #64e8de, #8a64eb);
   min-height: 100vh; }
 
-body, button {
+body,
+button {
   font-family: 'Raleway', sans-serif; }
 
 .btn {
@@ -49,8 +50,10 @@ body, button {
     color: #8a64eb;
     font-size: 2rem;
     background-color: #f4f2f2;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 5px; }
+  .btn__opposite {
+    margin-top: 1.5rem; }
 
 .spinner {
   margin: 5rem auto;
@@ -84,7 +87,7 @@ body, button {
   background-color: #fff;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
-  animation: fadeIn .5s ease-in .5s;
+  animation: fadeIn 0.5s ease-in 0.5s;
   animation-fill-mode: forwards; }
   @media only screen and (max-width: 56.25em) {
     .container {
@@ -98,6 +101,9 @@ body, button {
   @media only screen and (max-width: 31.25em) {
     .container {
       height: 58rem; } }
+  @media only screen and (max-width: 23.4375em) {
+    .container {
+      height: 68rem; } }
   .container__paragraph {
     align-self: center;
     text-align: center;
@@ -110,6 +116,10 @@ body, button {
       .container__paragraph {
         font-size: 5.5rem;
         width: 98%; } }
+    @media only screen and (max-width: 23.4375em) {
+      .container__paragraph {
+        font-size: 5rem;
+        line-height: 6.5rem; } }
 
 .primary-container {
   display: flex;
@@ -121,6 +131,9 @@ body, button {
     .primary-container {
       flex-direction: column;
       justify-content: space-evenly; } }
+  @media only screen and (max-width: 23.4375em) {
+    .primary-container {
+      padding: 0 0.5rem; } }
 
 .result {
   display: flex;
@@ -145,6 +158,10 @@ body, button {
   display: flex;
   justify-content: space-between;
   margin: 0 2rem 1.5rem 2rem; }
+  @media only screen and (max-width: 23.4375em) {
+    .result-navigation {
+      flex-direction: column;
+      justify-content: flex-start; } }
 
 .hidden {
   display: none; }
